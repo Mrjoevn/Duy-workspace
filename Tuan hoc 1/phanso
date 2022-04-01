@@ -1,0 +1,22 @@
+// Xay dung lop phan so PS gom cac thuoc tinh tu so va mau so la cac so nguyen.
+// Trong lop cac dinh nghia cac ham sau :
+// Ham khoi tao cac tham so co gia tri ngam dinh
+// Ham huy
+// Ham rut gon phan so
+// Ham hien thi phan so ra man hinh o dang tu so / mau so
+// Viet chuong trinh khoi tao 2 phan so. In ra man hinh tong, hieu 2 phan so do.
+ #include<iostream.h>
+ using namespace std;
+ class PS
+ {
+ 	private:
+	 int tuso, mauso;
+	public:
+	PS()
+	{
+		tuso=0;
+		mauso=0;
+	}
+	~PS(){};
+	
+ };

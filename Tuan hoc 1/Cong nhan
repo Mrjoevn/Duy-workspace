@@ -1,0 +1,20 @@
+//Xay dung lop cong nhan CN gom cac thuoc tinh ho ten ht(kieu char), tuoi t
+//(kieu so nguyen), que quan(kieu char), bac luong bl(kieu float).Trong lop co
+//dinh nghia cac ham sau:
+// -Ham khoi tao cac thong tin tren cho 1 cong nhan.
+// -Ham xuat cac thong tin tren cua cong nhan ra man hinh .
+// -Ham tinh tien luong cho cong nhan ra biet rang luong = bac luong *2500 +phu cap
+// (tien phu cap cong nhan la 20% luong)
+//Viet chuong trinh nhap vao thong tin 1 cong nhan. In ra man hinh tien luong cong nhan do.
+#include<iostream.h>
+using namespace std;
+class CongNhan
+{
+	private:
+	char ho_ten;
+	int tuoi;
+	char que_quan;
+	float bac_luong;
+	public:
+	
+};

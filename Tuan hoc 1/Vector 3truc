@@ -1,0 +1,47 @@
+#include<iostream.h>
+using namespace std;
+
+class Vecto3
+{
+	private:
+	int a , b ,c;
+	public:
+	Vecto3(int a= 0 ,int b=0 ,int c=0)
+	{
+		this->a=a;
+		this->b=b;
+		this->c=c;	
+	}
+	~Vecto3(){};
+	void Nhap()
+	{
+		cout<<"\nNhap truc hoanh :";cin>>a;
+		cout<<"\nNhap truc tung :";cin>>b;
+		cout<<"\nNhap truc cao :";cin>>c;
+	}
+	void hienthi()
+	{
+		cout<<"\nToa do :"<<"("<<a<<","<<b<<","<<c<<")";
+	}
+	Vecto3 tong(Vecto3 vt)
+	{
+		Vecto3 vt1;
+		vt1.a= this->a + vt.a;
+		vt1.b= this->b + vt.b;
+		vt1.c= this->c + vt.c;
+		return vt1;
+	}
+};
+int main()
+{
+	Vecto3 vt1;
+	vt1.Nhap();
+	vt1.hienthi();
+	Vecto3 vt2;
+	vt2.Nhap();
+	vt2.hienthi();
+	Vecto3 vt3;
+	vt3= vt1.tong(vt2);
+	cout<<"\nTong cua 2 vecto la :";
+	vt3.hienthi();
+}

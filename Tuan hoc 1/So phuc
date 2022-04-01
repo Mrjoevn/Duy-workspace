@@ -1,0 +1,50 @@
+#include<iostream.h>
+class SP
+{
+	private:
+	int pt , pa;
+	public:
+	SP(int ppt=0 ,int ppa=0)
+	{
+		pt=ppt;
+		pa=ppa;
+	}
+	~SP(){};
+	void in()
+	{
+		if(pt==0)
+		{
+			cout<<"\n"<<pa<<"*j";
+		}
+		else if(pa == 0)
+		{
+			cout<<"\n"<<pt;
+		}
+		else{
+			cout<<pt<<" + "<<pa<<"*j";
+		}
+	}
+	SP tong(SP sp1)
+	{
+		SP sp2;
+		sp2.pt =pt + sp1.pt;
+		sp2.pa =pa + sp1.pa;
+		return sp2;
+	}
+};
+int main()
+{
+	SP sp1(5,6);
+	SP sp2(4,9);
+	cout<<"\nSo phuc 1 la :";
+	sp1.in();
+	cout<<"\nSo phuc 2 la :";
+	sp2.in();
+	SP sp3(1,4);
+	cout<<"\nSo phuc 3 la :";
+	sp3.in();
+	SP utong= sp3.tong(sp2.tong(sp1));
+	cout<<"\nTong cua 3 so phuc la :";
+	utong.in();
+	return 0;
+}
